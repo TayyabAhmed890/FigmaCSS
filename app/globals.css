@@ -1,27 +1,9 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -30,13 +12,275 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Navbar */
+
+.Navbar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.Navbar ul{
+  align-items: center;
+  display: flex;
+  list-style: none;
+  width: 280px;
+  height: 24px;
 }
+.Navbar ul li{
+  text-decoration: none;
+  color: black;
+  width: 85px;
+  height: 24px;
+  font-family: "Inter" serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Hero Section */
+
+.Hero{
+  margin: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+}
+
+.div1{
+  width: 521px;
+height: 305px;
+
+}
+.div1>p{
+height: 66px;
+font-size: 16px;
+font-weight: 400;
+margin-top: 20px;
+
+
+}
+.div1>button{
+  width: 200px;
+height: 50px;
+margin-top: 30px;
+font-size: 18px;
+font-weight: 500;
+color: white;
+background-color: #f98585;
+border: none;
+box-shadow: 0px 2px 4px black ;
+
+
+}
+.Hero>.div1>h1{
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 61px;
+  letter-spacing: 2px;
+  text-align: left;
+  
+}
+.Hero .image{
+  width: 292px;
+  height: 299px;
+
+}
+
+/* Recent */
+
+.Recent{
+  background-color: #f4e2e2;
+  width: 100%;
+height: auto;
+
+}
+.maindiv{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom:70px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.Recent .r1{
+  display: flex;
+  justify-content: space-between;
+  padding:17px 130px;
+}
+.r1>h3{
+font-size: 22px;
+margin-top: 10px;
+font-weight: 500;
+text-align: left;
+}
+.color{
+  color:#F98585;
+}
+.Recent .r2{
+  width: 483px;
+height: 356px;
+padding: 30px 40px;
+background-color: white;
+
+}
+.r2>h2{
+font-size: 26px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 0.02em;
+text-align: left;
+
+}
+.r2>h4{
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  width: 301.28px;
+height: 42.12px;
+
+
+}
+
+.r2>p{
+  padding-top: 30px;
+}
+
+/* Featured */
+.fw{
+  padding-left: 130px;
+
+
+}
+.fw>h4{
+  margin-top: 70px;
+  font-size: 22px;
+font-weight: 500;
+text-align: left;
+}
+.add{
+  display: flex;
+  padding: 50px 130px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.Image{
+border-radius: 6px 0px 0px 0px;
+
+}
+.DashPar{
+  display: flex;
+  gap: 30px;
+  padding-top: 15px;
+  font-weight: 400;
+  align-items: center;
+}
+.DashPar>h4{ 
+  background-color: #f98585;
+  padding-inline: 10px;
+  border-radius: 20px;
+  color: white;
+
+}
+.content>p{ 
+  padding-top: 20px;
+
+}
+
+/* footer */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+height: 243px;
+justify-content: center;
+align-items: center;
+
+}
+.fimg{
+display: flex;
+gap: 40px;
+
+
+}
+.ftxt{
+font-size: 22px;
+font-weight: 500;
+line-height: 32.31px;
+text-align: left;
+
+
+}
+
+  /* responsive */
+  @media (max-width:1080px){
+    .add{
+      flex-direction: column;
+      padding: 30px 30px;
+      
+    }
+    .fw{
+      padding-left: 20px;
+    }
+    .content>p{ 
+      font-size: 15px;
+      text-align: justify;
+    
+    }
+    .ftxt{
+      font-size: 20px;
+    }
+  }
+
+@media (max-width:768px){
+
+.Navbar{
+  justify-content: center;
+  text-align: center;
+}
+.Navbar ul li{
+  font-size: 16px;
+  text-align: center;
+}
+  .Hero{
+    justify-content: center;
+  }
+  .div1{
+    width: 400px;
+  height: 300px;
+  margin-right: 20px;
+  
+  }
+  .div1>button{
+    margin-top: 50px;
+  }
+  .Recent .r2{
+    width: 470px;
+  height: 350px;
+  font-size: 15px;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+  .Recent .r1{
+    padding:17px 20px;
+  }
+  .r1>h3{
+    font-size: 15px;
+    }
+}
+ 
